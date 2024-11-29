@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Gadgets - Doraemon Gadgets Store</title>
+    <link rel="stylesheet" href="/css/gadgets.css" />
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const wishlistButtons = document.querySelectorAll('.wishlist-btn');
+    
+    wishlistButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            button.classList.toggle('added');
+            
+            if (button.classList.contains('added')) {
+                button.innerHTML = `<i class="fas fa-shopping-cart"></i> Added to Wishlist - ${button.getAttribute('data-price')}`;
+            } else {
+                button.innerHTML = `Add to Wishlist - ${button.getAttribute('data-price')}`;
+            }
+        });
+    });
+});
+      </script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">Doraemon Gadgets</div>
+      <nav class="nav">
+        <ul>
+          <li><a href="/html/index.html">Home</a></li>
+          <li><a href="/html/gadgets.html">Gadgets</a></li>
+          <li><a href="/html/contact.html">Contact</a></li>
+          <li><a href="/html/about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="gadgets" class="gadgets">
+        <h1>Our Amazing Gadgets</h1>
+        <div class="gadget-list">
+          <div class="gadget">
+   <img src="/images/anywheredooor.jpg" alt="Anywhere door">
+            <h3>Anywhere Door</h3>
+            <p>Teleport to any destination instantly with this magical door!</p>
+           
+            <button class="wishlist-btn" data-gadget="Anywhere Door" data-price="$69.99">Add to Wishlist- $69.99</button>
+          </div>
+          <div class="gadget">
+            <img src="/images/bamboo_coopter.png" alt="Bamboo Copter" />
+            <h3>Bamboo Copter</h3>
+            <p>Fly through the skies effortlessly with this handy gadget.</p>
+            <button class="wishlist-btn" data-gadget="bamboo_coopter" data-price="$99.99">Add to Wishlist- $99.99 </button>
+          </div>
+
+          <div class="gadget">
+            <img src="/images/big_light.png" alt="Big Light" />
+            <h3>Big Light</h3>
+            <p>
+              Enlarge anything you shine this light on. Perfect for big ideas!
+            </p>
+            <button class="wishlist-btn" data-gadget="big_light" data-price="$88.99">Add to Wishlist - $88.90.99</button>
+          </div>
+
+          <div class="gadget">
+            <img src="/images/Small_Light.webp" alt="Small Light" />
+            <h3>Small Light</h3>
+            <p>Shrink objects to fit your needs with this ingenious device.</p>
+            <button class="wishlist-btn" data-gadget="small light" data-price="$89.99">Add to Wishlist - $89.99 </button>
+          </div>
+
+          <div class="gadget">
+            <img src="/images/Time_Cloth.webp" alt="Time Cloth" />
+            <h3>Time Cloth</h3>
+            <p>Turn back time or age objects with this mysterious cloth.</p>
+            <button class="wishlist-btn" data-gadget="Time_Cloth" data-price="$95.99">Add to Wishlist - $95.99</button>
+          </div>
+
+          <div class="gadget">
+            <img src="/images/translator.webp" alt="Translator Kun" />
+            <h3>Translator Kun</h3>
+            <p>Understand any language with this versatile translator.</p>
+            <button class="wishlist-btn" data-gadget="Tranlator" data-price="$59.99">Add to Wishlist - $59.99</button>
+          </div>
+
+          <div class="gadget">
+            <img src="/images/Invisible_Cape.webp" alt="Invisible Cloak" />
+            <h3>Invisible Cloak</h3>
+            <p>Become invisible and explore the world unnoticed!</p>
+            <button class="wishlist-btn" data-gadget="Invisible_Cape" data-price="$110.99">Add to Wishlist - $110.99</button>
+          </div>
+
+          <div class="gadget">
+            <img src="/images/Images.webp" alt="Time Machine" />
+            <h3>Time Machine</h3>
+            <p>Travel through time and explore the past or future.</p>
+            <button class="wishlist-btn" data-gadget="Time Machine" data-price="$420.99">Add to Wishlist - $420</button>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2024 Doraemon Gadgets Store. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

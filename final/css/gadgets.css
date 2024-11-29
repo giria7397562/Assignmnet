@@ -1,0 +1,127 @@
+/* General Styles */
+body {
+  font-family: "Comic Sans MS", "Comic Neue", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #e6f7ff; /* Light blue to align with Doraemon's theme */
+  color: #333;
+}
+
+/* Header */
+.header {
+  background-color: #0099ff; /* Doraemon-themed blue */
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* Gadgets Section */
+.gadgets {
+  padding: 2rem;
+  background-color: #f0f8ff; /* Soft light blue for the section background */
+  text-align: center;
+}
+.gadgets h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #0099ff; /* Primary blue for headings */
+}
+.gadget-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+.gadget {
+  background: #ffffff; /* White background for cards */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.gadget img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+.gadget h3 {
+  font-size: 1.25rem;
+  margin: 1rem 0;
+  color: #0099ff; /* Highlighted blue for gadget titles */
+}
+.gadget p {
+  font-size: 1rem;
+  padding: 0 1rem 1rem;
+  color: #555; /* Slightly muted color for descriptions */
+}
+.gadget:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.footer {
+  background-color: #0099ff; /* Doraemon blue */
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto; /* Ensures the footer sticks to the bottom when content is less */
+}
+.footer p {
+  margin: 0;
+  font-size: 0.875rem;
+}
+.gadget {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.wishlist-btn {
+  text-decoration: none;
+  margin-top: auto;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #0099ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.wishlist-btn:hover {
+  background-color: #007acc;
+}
+
+.wishlist-btn.added {
+  background-color: #4CAF50;
+}
+.price {
+  font-size: 18px;
+  color: #090101; /* Bootstrap danger color */
+  font-weight: bold;
+}
+
+

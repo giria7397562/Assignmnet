@@ -1,0 +1,83 @@
+/* General Reset */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Comic Sans MS", "Comic Neue", sans-serif;
+  background-color: #e6f7ff;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #0099ff;
+  color: white;
+}
+.header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-decoration: none;
+  color: white;
+}
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* About Section */
+.about {
+  padding: 50px 20px;
+  text-align: center;
+  flex: 1;
+}
+.about h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #0099ff;
+}
+.about p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+.about h2 {
+  font-size: 1.8rem;
+  margin-top: 30px;
+  color: #333;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0099ff;
+  color: white;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
